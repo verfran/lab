@@ -4,7 +4,7 @@ from import_export.admin import ImportExportModelAdmin
 
 
 # Register your models here.
-@admin.register(Person)
-class PersonAdmin(ImportExportModelAdmin):
+@admin.register(Patient)
+class PatientAdmin(ImportExportModelAdmin):
 	list_display = ('firstName', 'secondName', 'gender', 'dateOfBirth', 'notes',
 		'phoneNumber', 'email')
